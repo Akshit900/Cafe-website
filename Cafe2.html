@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Clubhouse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc; 
+        }
+        .navbar {
+            margin-bottom: 0;
+            background-color: burlywood;
+        }
+        .navbar-brand img {
+            max-height: 40px;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #847a5c;
+        }
+        header {
+            background-color: #fffaf0; /* Beige header color */
+            color: #3e2723;
+            padding: 50px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .menu-section {
+            margin-top: 50px;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .menu-item {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .menu-item h4 {
+            margin-top: 15px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            header {
+                padding: 30px 0;
+            }
+            .menu-item {
+                padding: 15px;
+            }
+        }
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2em;
+            }
+            header {
+                padding: 20px 0;
+            }
+            .menu-item {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="the-coffee-clubhouse-high-resolution-logo-transparent.png" alt="The coffee Clubhouse">
+            The Coffee Clubhouse
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Cafe.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Cafe_contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>The Coffee Clubhouse</h1>
+        <p><b> At The Coffee Clubhouse, we're passionate about creating a warm and inviting space where friends and family can gather to share laughter, stories, and a great cup of coffee. Our cafe is more than just a place to grab a quick coffee - it's a community hub where you can relax, unwind, and connect with others.<br>This little coffee shop is everything to us. Our mission is strong and fueled by the passion we feel for this community. My family and I have created a space where you can network with others in the same phase of life, get a great cup of coffee, and enjoy your little one being a little one. Together, we are a community that values connection and play</b></p>
+    </header>
+
+    <!-- Body -->
+    <div class="container menu-section">
+        <h2 class="text-center">Our Menu</h2>
+        <div class="menu-grid mt-4">
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjyHlkViXf1t9FlpAnmlozT9DZSvPbFi-Lg&s" alt="Espresso">
+                <h4>Espresso</h4>
+                <p>Rs. 220</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLnLPUZ3bW7hUV_A7YnyyT4erF2UztwQuocQ&s" alt="Latte">
+                <h4>Latte</h4>
+                <p>Rs. 240</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9XAW2dKjfyKedMHS0RCpElyziMJxhllI6lw&s" alt="Cappuccino">
+                <h4>Cappuccino</h4>
+                <p>Rs. 270</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn2wyDYfr1bSRPUN9EFaYaocOKUzc6qa-ckA&s" alt="Americano">
+                <h4>Americano</h4>
+                <p>Rs. 280</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_rder3ErXw8enDixB-OK-8X3jxGaQB_2Arw&s" alt="Chocolate Croissant">
+                <h4>Chocolate Croissant</h4>
+                <p>Rs. 220</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSiqm8dBpwbTXLP7_FAEw5M8V63VR-eDf_1A&s" alt="Blueberry Muffin">
+                <h4>Blueberry Muffin</h4>
+                <p>Rs. 180</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-tSMK2gu4vXAdvJStMm68ihOr6-D98RKeDg&s" alt="Cheese Sandwich">
+                <h4>Cheese Sandwich</h4>
+                <p>Rs. 320</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6G0yyjtuft88MjqAWiZ3IFnUzUuSQdjkwsA&s" alt="Caesar Salad">
+                <h4>Caesar Salad</h4>
+                <p>Rs. 350</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTzOBhH95l4n2HY_gATF9NcWM34RhqHD5ixg&s" alt="Orange Juice">
+                <h4>Orange Juice</h4>
+                <p>Rs. 170</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.onlymyhealth.com/imported/images/2022/November/19_Nov_2022/main-applejuicebenefits.jpg" alt="Apple Juice">
+                <h4>Apple Juice</h4>
+                <p>Rs. 180</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYLS8VrgEqMV_-BgrRFvGjyNE-CNBGGCfdAw&s" alt="Lemonade">
+                <h4>Lemonade</h4>
+                <p>Rs. 200</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQmIGTgz1FtyEXMzyYfrf2S7vx1GqtDMhNrQ&s" alt="Ice Tea">
+                <h4>Lemon Iced Tea</h4>
+                <p>Rs. 220</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtsrIUPi59B_4lo_MlDHCWvlnhDc8AtkF9FA&s" alt="Bagel with Cream Cheese">
+                <h4>Bagel with Cream Cheese</h4>
+                <p>Rs. 280</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2_m4sQR27MP-pHa1Bs4HbrlappGEC_zsIkg&s" alt="Ham & Cheese Croissant">
+                <h4>Ham & Cheese Croissant</h4>
+                <p>Rs. 320</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8kbAwsnI4j76hmUPraB077ajBjPuKpJUrg&s" alt="Alfredo Pasta">
+                <h4>Alfredo Pasta</h4>
+                <p>Rs. 350</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Address:</strong> 123 Main St, Anytown, India</p>
+        <p><strong>Contact Us:</strong> +91 6239XXXXXX |CoffeeClubhouse@gmail.com</p>
+        <div class="aboutf">
+            <h2>Follow Us-</h2>
+            <img class="img" src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png" height="25px" width="25px"><br>
+            <img class="img" src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338509_1280.png"height="25px" width="25px"><br>
+            <img class="img" src="https://cdn.pixabay.com/photo/2023/09/02/17/51/x-8229321_640.png" height="25px" width="25px">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
